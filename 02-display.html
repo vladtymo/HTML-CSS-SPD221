@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Mode</title>
+    <style>
+        body {
+            /* margin: 0; */
+            /* padding: 0; */
+            /* width: 50%; */
+            /* margin: auto; */
+        }
+
+        p,
+        div {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 4px;
+        }
+
+        span {
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        .inline-block span {
+            /* inline-block: size = content, but we can set block properties */
+            display: inline-block;
+
+            padding: 10px;
+            margin: 4px;
+        }
+
+        img {
+            display: block;
+            background-color: red;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .circle-img {
+            border-radius: 50%;
+        }
+
+        /* CSS property priority:
+            tag:    1       example: h1
+            class:  10      example: .important
+            id:     100     example: #main
+            inline: 1000    example: style="prop=value;"
+
+            mix: p img .super (1 + 1 + 10 = 12)
+        */
+    </style>
+</head>
+
+<body>
+    <h2>Block Elements (size = container size)</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, aspernatur!</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+    <h2>Inline Elements (size = content size)</h2>
+    <div>
+        <span>Hello!</span>
+        <span>How</span>
+        <span>are</span>
+        <span>you?</span>
+    </div>
+
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat sit ullam est quod minus neque doloremque,
+        consectetur repellendus? Id labore minima delectus quae libero dolorem quaerat esse, voluptas obcaecati
+        accusantium!
+        <img class="float-right" width="100" src="./images/t6vbjui1jm8q52osgfcj.webp" alt="">
+        <img class="circle-img" width="100" src="./images/t6vbjui1jm8q52osgfcj.webp" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nobis dicta ea sapiente. Explicabo reprehenderit
+        optio consectetur velit animi necessitatibus, aliquid soluta harum eaque itaque quas modi doloremque eum at.
+        <img class="float-right circle-img" width="100" src="./images/t6vbjui1jm8q52osgfcj.webp" alt="">
+        Lorem ipsum dolor sit amet consectetur.
+        <img width="100" src="./images/t6vbjui1jm8q52osgfcj.webp" alt="">
+    </div>
+
+    <h2>Inline-Block Elements</h2>
+    <div class="inline-block">
+        <span>Hello!</span>
+        <span>Howhhhhhhhhhhhhhhhhh!</span>
+        <span>are</span>
+        <span>you?</span>
+    </div>
+
+    <h3>Block elements</h3>
+    <div>
+        <div>Block 1</div>
+        <div>Block 2</div>
+        <div>Block 3</div>
+        <div>Block 4</div>
+    </div>
+</body>
+
+</html>
