@@ -34,6 +34,7 @@
             font-weight: bold;
             background-color: transparent;
             font-family: fantasy;
+            /* 1em = original */
             font-size: 1.2em;
             color: blueviolet;
         }
@@ -53,6 +54,12 @@
         .large {
             font-size: 2em;
             text-shadow: 0 0 10px red;
+        }
+
+        /* ----- id selector ----- */
+        #main-line {
+            color: red;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -84,7 +91,7 @@
 
     <!-- emmet: article>(p>lorem5)*3 -->
     <article>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p id="main-line">Lorem ipsum dolor sit amet.</p>
         <p>A, veritatis iste? Deleniti, consequuntur!</p>
         <p>Dicta, voluptas fugit. Recusandae, iure!</p>
     </article>

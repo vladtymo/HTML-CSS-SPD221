@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        .reset-style {
+            list-style-type: none;
+            padding: 0;
+            /* margin: 0; */
+        }
+
+        /* ---------- list styling ---------- */
+        ul.custom {
+            list-style-type: circle;
+            /* list-style-position: inside; */
+        }
+
+        ul.marker-image {
+            list-style-image: url(./images/ukraine.png);
+        }
+
+        ol.custom {
+            list-style-type: upper-alpha;
+        }
+
+        .styled {
+            color: green;
+        }
+
+        /* ---------- pseudo class: ::marker ---------- */
+        ol.custom li::marker {
+            color: red;
+        }
+
+        #third-item::marker {
+            color: darkred;
+            font-weight: bold;
+        }
+
+        /* ---------- create custom marker content ---------- */
+        ol.custom-marker {
+            list-style-type: none;
+            counter-reset: count;
+        }
+
+        /* ---------- pseudo-elements: ::before ::after ---------- */
+        ol.custom-marker li::before {
+            content: '(' counter(count) ') ';
+            counter-increment: count;
+            text-shadow: 1px 1px 12px rgb(52, 52, 52);
+        }
+
+        /* ---------- definition list styling ---------- */
+        dl {
+            background-color: lightsteelblue;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        dt {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 2px;
+        }
+
+        dd {
+            margin-left: 0;
+            padding: 10px;
+            background-color: darkslateblue;
+            color: white;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        /* pseudo class: :last-child */
+        dl dd:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with Lists</h1>
+    <!-- Ctrl+B - show/hide side menu -->
+
+    <h2>Unordered Lists</h2>
+    <!-- emmet: ul>li*5>lorem7 -->
+    <ul class="custom">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Dolorem, totam provident. Molestias libero quisquam non?</li>
+        <li>At omnis et vel tempora ipsum dicta?</li>
+        <li>Porro id culpa nisi deserunt qui quos.</li>
+        <li>Officiis reprehenderit iste amet, eaque perspiciatis repellendus.</li>
+    </ul>
+
+    <ul class="marker-image">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Dolorem, totam provident. Molestias libero quisquam non?</li>
+        <li>At omnis et vel tempora ipsum dicta?</li>
+        <li>Porro id culpa nisi deserunt qui quos.</li>
+        <li>Officiis reprehenderit iste amet, eaque perspiciatis repellendus.</li>
+    </ul>
+
+    <h2>Ordered Lists</h2>
+    <ol class="custom">
+        <li><span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></li>
+        <li class="styled">Dolorem, totam provident. Molestias libero quisquam non?</li>
+        <li id="third-item">At omnis et vel tempora ipsum dicta?</li>
+        <li class="styled">Porro id culpa nisi deserunt qui quos.</li>
+        <li>Officiis reprehenderit iste amet, eaque perspiciatis repellendus.</li>
+    </ol>
+
+    <h3>List with reseted styles</h3>
+    <ol class="reset-style">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Dolorem, totam provident. Molestias libero quisquam non?</li>
+        <li>At omnis et vel tempora ipsum dicta?</li>
+        <li>Porro id culpa nisi deserunt qui quos.</li>
+        <li>Officiis reprehenderit iste amet, eaque perspiciatis repellendus.</li>
+    </ol>
+
+    <h3>List attributes</h3>
+    <ol start="6" reversed>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Dolorem, totam provident. Molestias libero quisquam non?</li>
+        <li value="20">At omnis et vel tempora ipsum dicta?</li>
+        <li>Porro id culpa nisi deserunt qui quos.</li>
+        <li>Officiis reprehenderit iste amet, eaque perspiciatis repellendus.</li>
+    </ol>
+
+    <h3>List with Custom Marker Content</h3>
+    <ol class="custom-marker">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Dolorem, totam provident. Molestias libero quisquam non?</li>
+        <li>At omnis et vel tempora ipsum dicta?</li>
+        <li>Porro id culpa nisi deserunt qui quos.</li>
+        <li>Officiis reprehenderit iste amet, eaque perspiciatis repellendus.</li>
+    </ol>
+
+    <h3>Definition List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed
+            in a web browser. </dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a
+            document written in a markup language such as HTML or XML.</dd>
+
+        <dt>JS</dt>
+        <dd>JavaScript, often abbreviated as JS, is a programming language and core technology of the World
+            Wide Web,
+            alongside HTML and CSS.</dd>
+    </dl>
+</body>
+
+</html>
