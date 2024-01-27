@@ -81,6 +81,15 @@
         dl dd:last-child {
             margin-bottom: 0;
         }
+
+        /* ------- multilevel list styling ------- */
+        ol ol {
+            color: lightcoral;
+        }
+
+        ol ol ol {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -157,6 +166,37 @@
             Wide Web,
             alongside HTML and CSS.</dd>
     </dl>
+
+    <h2>Multilevel List</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet.
+            <ol>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Harum nihil libero repellendus.</li>
+                <li>Asperiores dolores voluptas fuga!</li>
+            </ol>
+        </li>
+        <li>Saepe officiis impedit suscipit unde.
+            <ol>
+                <li>Lorem, ipsum dolor.
+                    <ol>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Sint, odit cumque?</li>
+                    </ol>
+                </li>
+                <li>Sint, odit cumque?</li>
+            </ol>
+        </li>
+        <li>Alias officiis sint illo explicabo!
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Sint, odio ut voluptates eveniet vero nisi?</li>
+                <li>Voluptatum fugit omnis, maiores vitae praesentium deserunt.</li>
+                <li>Quidem accusamus qui at fugit sed. Quam.</li>
+            </ul>
+        </li>
+        <li>Doloremque iste aliquam libero expedita?</li>
+    </ol>
 </body>
 
 </html>
