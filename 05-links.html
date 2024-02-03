@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            background-color: darkmagenta;
+            color: white;
+            padding: 10px;
+            margin: 2px;
+            border-radius: 4px;
+            width: 160px;
+            text-align: center;
+            display: block;
+
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        /* ------- pseudo classes ------- */
+        /* :link - apply to NOT visited link */
+        nav a:link {
+            font-weight: bold;
+        }
+
+        /* :visited - apply to visited link */
+        nav a:visited {
+            color: rgb(221, 221, 221);
+        }
+
+        /* :hover - apply when element hovered by mouse */
+        nav a:hover {
+            background-color: rgb(80, 0, 80);
+            box-shadow: 0 0 6px black;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* :active - apply when element pressed */
+        nav a:active {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with Links</h1>
+
+    <!-- navigation bar -->
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <a href="https://google.com">Google</a>
+            </li>
+            <li>
+                <a href="https://apple.com" target="_blank">Apple (new tab)</a>
+            </li>
+            <li>
+                <a href="./03-lists.html">Lists</a>
+            </li>
+            <li>
+                <a href="#super-title">Go to Super Title</a>
+            </li>
+        </ul>
+    </nav>
+
+    <a href="https://opera.com">Primary link</a>
+
+    <article>
+        <h2>Some heading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quasi numquam ullam veritatis, ea fugiat
+            ratione suscipit corporis dolore est dignissimos fugit consequatur saepe dolores molestias enim animi culpa?
+            Iste.</p>
+        <h2>Some another title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quod veritatis explicabo assumenda corrupti
+            fuga debitis rerum optio voluptatibus iste error sequi quia illo, illum, facilis esse tenetur nulla ducimus?
+        </p>
+        <p>Molestias veniam asperiores, laboriosam consequatur, adipisci dolore esse neque quidem cum aperiam, repellat
+            ab obcaecati. Laborum corrupti voluptatum natus, provident consequatur excepturi, quaerat obcaecati
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ab.</li>
+            <li>Atque totam assumenda dolores fugit officiis voluptatem ut unde numquam.</li>
+            <li>Placeat, labore totam velit officia vero eveniet alias expedita aut?</li>
+        </ul>
+        repudiandae similique suscipit ex, consectetur labore.</p>
+        <p>Beatae dolore iure possimus, quasi porro iusto optio quis natus? Laboriosam non deleniti aliquam autem,
+            assumenda magnam sequi sit. Earum dolorem quaerat libero quia! Accusantium labore magnam placeat
+            consequuntur asperiores.</p>
+        <h2>Some heading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quasi numquam ullam veritatis, ea fugiat
+            ratione suscipit corporis dolore est dignissimos fugit consequatur saepe dolores molestias enim animi culpa?
+            Iste.</p>
+        <h2 id="super-title">Super title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quod veritatis explicabo assumenda corrupti
+            fuga debitis rerum optio voluptatibus iste error sequi quia illo, illum, facilis esse tenetur nulla ducimus?
+        </p>
+        <p>Molestias veniam asperiores, laboriosam consequatur, adipisci dolore esse neque quidem cum aperiam, repellat
+            ab obcaecati. Laborum corrupti voluptatum natus, provident consequatur excepturi, quaerat obcaecati
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ab.</li>
+            <li>Atque totam assumenda dolores fugit officiis voluptatem ut unde numquam.</li>
+            <li>Placeat, labore totam velit officia vero eveniet alias expedita aut?</li>
+        </ul>
+        repudiandae similique suscipit ex, consectetur labore.</p>
+        <p>Beatae dolore iure possimus, quasi porro iusto optio quis natus? Laboriosam non deleniti aliquam autem,
+            assumenda magnam sequi sit. Earum dolorem quaerat libero quia! Accusantium labore magnam placeat
+            consequuntur asperiores.</p>
+        <h2>Some heading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quasi numquam ullam veritatis, ea fugiat
+            ratione suscipit corporis dolore est dignissimos fugit consequatur saepe dolores molestias enim animi culpa?
+            Iste.</p>
+        <h2>Some another title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quod veritatis explicabo assumenda corrupti
+            fuga debitis rerum optio voluptatibus iste error sequi quia illo, illum, facilis esse tenetur nulla ducimus?
+        </p>
+        <p>Molestias veniam asperiores, laboriosam consequatur, adipisci dolore esse neque quidem cum aperiam, repellat
+            ab obcaecati. Laborum corrupti voluptatum natus, provident consequatur excepturi, quaerat obcaecati
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ab.</li>
+            <li>Atque totam assumenda dolores fugit officiis voluptatem ut unde numquam.</li>
+            <li>Placeat, labore totam velit officia vero eveniet alias expedita aut?</li>
+        </ul>
+        repudiandae similique suscipit ex, consectetur labore.</p>
+        <p>Beatae dolore iure possimus, quasi porro iusto optio quis natus? Laboriosam non deleniti aliquam autem,
+            assumenda magnam sequi sit. Earum dolorem quaerat libero quia! Accusantium labore magnam placeat
+            consequuntur asperiores.</p>
+        <div class="align-center">
+            <a href="#top">
+                <img width="50" src="./images/up.png" alt="up">
+            </a>
+        </div>
+    </article>
+</body>
+
+</html>
