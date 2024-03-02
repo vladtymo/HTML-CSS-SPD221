@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 4px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .last-stretch {
+            display: flex;
+            /* flex-direction: column; */
+            gap: 6px;
+        }
+
+        .last-stretch input {
+            flex-grow: 1;
+        }
+
+        /* ------- style form elements ------- */
+        form {
+            background-color: antiquewhite;
+        }
+
+        input.styled {
+            background-color: cadetblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            outline: none;
+            transition: .2s;
+        }
+
+        input.styled:hover {
+            background-color: rgb(67, 114, 116);
+        }
+
+        input.styled:focus {
+            box-shadow: 2px 2px 10px black;
+        }
+
+        button.styled:active {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with Forms</h1>
+
+    <form action="#">
+        <h2>Test Form</h2>
+        <label for="fullNameIn" accesskey="f"><u>F</u>ull Name</label>
+        <input class="styled" type="text" id="fullNameIn">
+        <label class="last-stretch">
+            <span>Email:</span>
+            <input type="email" placeholder="Enter your email address">
+        </label>
+        <label class="last-stretch">
+            <span>Password:</span>
+            <input type="password" placeholder="Enter your password">
+        </label>
+
+        <input type="number" value="33" name="year">
+        <input type="date">
+        <input type="time">
+        <input type="url">
+        <input type="tel">
+        <input type="color">
+        <input type="week">
+        <input type="file">
+        <hr>
+        <label>Payment Type</label>
+        <div>
+            <label>Credit Card
+                <input type="radio" name="payment">
+            </label>
+            <label>By Cash
+                <input type="radio" name="payment" checked>
+            </label>
+            <label>With Phone
+                <input type="radio" name="payment">
+            </label>
+        </div>
+        <label>
+            <span>Accept Policy</span>
+            <input name="policy" type="checkbox">
+        </label>
+        <input type="range" name="" id="">
+
+        <input type="button" value="Test Button">
+        <input type="reset" value="Reset Button">
+        <input type="submit" value="Submit Button">
+        <button class="styled" type="submit">Submit Button</button>
+    </form>
+</body>
+
+</html>
